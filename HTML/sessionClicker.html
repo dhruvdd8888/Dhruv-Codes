@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Know kills</title>
+</head>
+
+<body>
+    <p>Kill the button below</p>
+    <input type="button" id="bttn" value="Kill" onclick="count()">
+    <p id="op">kill count : 0</p>
+</body>
+<script>
+    function count() 
+    {
+        if (sessionStorage != undefined) 
+        {
+            if (!(sessionStorage.a)) {
+                sessionStorage.a = 1
+            }
+            else 
+            {
+                sessionStorage.a = Number((Number(sessionStorage.a)) + 1)
+                document.getElementById("op").innerHTML = ("kill count : " + sessionStorage.a)
+            }
+        }
+    }
+</script>
+
+</html>

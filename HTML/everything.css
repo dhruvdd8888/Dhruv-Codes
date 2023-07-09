@@ -1,0 +1,32 @@
+body
+{
+    background: url(noodal.jpg);
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+}
+body 
+{
+    background:url(noodal.jpg) no-repeat;  
+    background-position-x: 25%;
+    background-position-y: 10%;
+}
+#first{
+    background-attachment: none;
+    /* background-color: aqua; */
+}
+#first{
+    border-style:ridge;
+}
+select>option{
+    color: aqua;
+}
+p:nth-of-type(2)
+{
+    color:crimson;
+    opacity: 0.2;
+}
+div
+{
+    /* background: linear-gradient(45deg,red 6%, blue ,green 33%); */
+    background: linear-gradient(45deg,rgba(255,0,0,0.6),rgba(0,255,0,1));
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Functions</title>
+</head>
+
+<body>
+    <div>
+        <canvas height="200px" width="400px" id="dhruv"><BR>
+    </div>
+    <div>
+        <canvas height="400px" width="800px" id="bhavin">
+    </div>
+    <div>
+        <canvas height="200px" width="400px" id="iron">
+    </div>
+    <div>
+        <canvas height="300px" width="500px" id="thor"></canvas>
+    </div>
+    <div>
+        <canvas height="300px" width="500px" id="hulk"></canvas>
+    </div>
+</body>
+<script>
+    var c = document.getElementById("dhruv");
+    var y = c.getContext("2d");
+    y.moveTo(10, 20)
+    y.lineTo(200, 20)
+    y.stroke()
+
+    var d = document.getElementById("bhavin")
+    var u = d.getContext("2d")
+    u.beginPath();
+    u.arc(200, 150, 100, 0, 6.28)
+    u.stroke()
+
+    var r = document.getElementById("iron")
+    var i = r.getContext("2d")
+    i.font = "30px monospace"
+    i.fillText("Dhruv", 16, 50)
+    i.stroke()
+
+    var e=document.getElementById("thor")
+    var w=e.getContext("2d")
+    var gr=w.createLinearGradient(0,0,300,0)
+    gr.addColorStop(0,"red")
+    gr.addColorStop(1,"black")
+    w.fillStyle=gr
+    w.fillRect(10,10,200,200)
+
+    var q=document.getElementById("hulk")
+    var l=q.getContext("2d")
+    var grd=l.createLinearGradient(70,50,8,90.60,150)
+    grd.addColorStop(0,"magenta")
+    grd.addColorStop(0.3,"cyan")
+    grd.addColorStop(0.7,"red")
+    grd.addColorStop(1,"yellow")
+    l.fillStyle=grd
+    l.fillRect(10,10,200,200)
+    
+
+</script>
+
+</html>

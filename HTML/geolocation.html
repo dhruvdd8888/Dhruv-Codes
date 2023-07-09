@@ -1,0 +1,24 @@
+<html>
+<body>
+    <button onclick="getLoc()">Get Location</button>
+    <p id="loc">
+    </p>
+    <script>
+        var a = document.getElementById("loc");
+        function getLoc() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPos, DisplayError)
+            }
+            else {
+                a.innerHTML = "Opps,Geolocation is not supported.";
+            }
+        }
+        function showPos(position) {
+            a.innerHTML = "Latitude: " + position.coords.latitude + "<br>Longitude: " + position.coords.longitude;
+        }
+        function DisplayError(error) {
+                    a.innerHTML = "An error occurred."
+        }
+    </script>
+</body>
+</html>

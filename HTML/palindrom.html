@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title>Palindrome</title>
+</head>
+<body>
+    Number : <input type="text" id="n1" placeholder="number"><br>
+    <button onclick="palin()"> Check</button><br>
+    Palindrome : <input type="text" id="op" placeholder="yes or no">
+</body>
+<script>
+    function palin(){
+        var x = document.getElementById("n1").value
+        var l= x.length
+        var flag=2;
+        for(let i=0;i<=(l/2);i++)
+            if(x[i] == x[l-(i+1)])
+                flag=1
+            else{
+                flag=0
+                break
+            }
+        document.getElementById("op").value=flag
+    }
+</script>
+</html>

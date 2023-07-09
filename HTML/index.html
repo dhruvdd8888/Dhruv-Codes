@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <input type="text"  id="a"><br>
+    <input type="text" id ="b"> <br>
+    <input type="text" id="c"><br>
+</body>
+<script>
+    y=[1,2,3,4,5,6,6,6,6,6,7,78,87]
+    w=y.indexOf(6)
+    z=y.lastIndexOf(6)
+    document.getElementById("a").value=y
+    document.getElementById("b").value=("First of 6  "+w)
+    document.getElementById("c").value=("Last of 6  "+z)
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head></head>
+<body>
+    <h2>Sending and recieving data from localStorage</h2>
+    Name: <input type="text" id="name"><br>
+    Age: <input type="text" id="age"><br>
+    Gender: <input type="text" id="gender"><br>
+    City: <input type="text" id="city"><br>
+    <input type="button" value="click here" onclick="func()"><br>
+    <p id="trial"></p>
+    <script>
+        function func() 
+        {
+            n = document.getElementById("name").value
+            a = document.getElementById("age").value
+            g = document.getElementById("gender").value
+            c = document.getElementById("city").value
+            var myObj = { Name: n, Age: a, Gender: g, city: c }
+            var send = JSON.stringify(myObj);
+            localStorage.setItem("testJSON", send);
+            var recieve = localStorage.getItem("testJSON");
+            var obj = JSON.parse(recieve);
+            document.getElementById("trial").innerHTML = JSON.stringify(recieve);
+        }
+    </script>
+</body>
+</html>

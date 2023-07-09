@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Student Registration form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form background-color: green>
+        <label  >First Name:</label>
+        <input type="text" placeholder="First name" color="red">
+        <label  >Middle Name:</label>
+        <input type="text" placeholder="Middle Name">
+        <label  >Last Name:</label>
+        <input type="text" placeholder="Last Name"><br><br>
+        Gender :
+        <input type="radio" value="male" name="gender">Male
+        <input type="radio" value="female" name="gender">Female 
+        <br><br>Address:
+        <textarea placeholder="Address" rows="3" cols="30"></textarea>
+        <br><br>Mobile Number:
+        <input type="tel">
+        Email ID:
+        <input type="text" placeholder="Email"><br>
+        <h4>Hobbies:</h4>
+        <input type="checkbox" id="first" name="hobbies">
+        <label for="first">Swimming</label>
+        <input type="checkbox" id="second" name="hobbies">
+        <label for="second">Dancing</label>
+        <input type="checkbox" id="third" name="hobbies">
+        <label for="third">Singing</label>
+        <input type="checkbox" id="foutth" name="hobbies">
+        <label for="first">Reading</label>
+        <input type="checkbox" id="fifth" name="hobbies">
+        <label for="second">Gaming</label>
+        <input type="checkbox" id="sixth" name="hobbies">
+        <label for="third">Watching TV</label><br><br>
+        
+        <label  >City: </label>
+        <select name="City" id="City">
+            <option value="seelctor">Select yout city</option>
+            <option value="gondal">Gondal</option>
+            <option value="london">London</option>
+            <option value="dubai">Dubai</option>
+            <option value="rajkot">Rajkot</option>
+        </select><br><br>
+
+        <label  >State: </label>
+        <select name="State" id="Stata">
+            <option value="seelctor">Select yout city</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="UP">UP</option>
+        </select><br>
+
+        <label  >Country: </label>
+        <select name="Country" id="Country">
+            <option value="seelctor">Select yout city</option>
+            <option value="America">America</option>
+            <option value="India">India</option>
+            <option value="British">British</option>
+            <option value="Australia">Australia</option>
+        </select><br>
+
+        <label>College: </label>
+        <select name="College" id="College">
+            <option value="seelctor">Select yout city</option>
+            <option value="IITB">IITB</option>
+            <option value="MIT">MIT</option>
+            <option value="Stanford">Stanford</option>
+            <option value="Oxford">Oxford</option>
+        </select><br><br>
+        Submit:
+        <input type="submit" onclick="alert('You are selected')">
+        Reset:
+        <input type="reset" onclick="alert('You are rejected')">
+    </form>
+</body>
+</html>

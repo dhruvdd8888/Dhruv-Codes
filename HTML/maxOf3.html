@@ -1,0 +1,28 @@
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Max of three number</title>
+    </head>
+    <body>
+        Num1 : <input type="text" id="n1" placeholder="number 1"><br>
+        Num2 : <input type="text" id="n2" placeholder="number 2"><br>
+        Num3 : <input type="text" id="n3" placeholder="number 3"><br>
+        <button onclick="max()">max</button><br>
+        MAX : <input type="text" id="op" placeholder="0"><br>
+    </body>
+    <script>
+        function max(){
+            var x = parseInt(document.getElementById("n1").value)
+            var y = parseInt(document.getElementById("n2").value)
+            var z = parseInt(document.getElementById("n3").value)
+            if ((x>y) && (y>z))
+                document.getElementById("op").value=x
+            if((y>x) && (y>z))
+                document.getElementById("op").value=y
+            if((z>x) && (z>y))
+                document.getElementById("op").value=z
+        }
+    </script>
+    </html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+   <title>Sum of N</title>
+</head>
+<body>
+    Number : <input type="text" id="ip" placeholder="Input"><br>
+    <button onclick="fact()">Factorial</button><br>
+    Sum : <input type="text" id="op" placeholder="0">
+</body>
+<script>
+    function fact() 
+    {
+        var xx = document.getElementById("ip").value
+        x=parseInt(xx)
+        f=(x*(x+1))/2
+        document.getElementById("op").value=f
+        
+    }
+</script>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Get your result here</h1>
+        <form action="result.php">
+
+            <!-- text input  placeholer is used to display inside box before user fills any value -->
+
+            name:
+            <input type="text" placeholer="Enter your name"><br>
+
+            <!-- radio buttons ie select any one  -->
+
+            <!--thing outside <input> will be there on page
+            id is variable vale id
+            name is variable name
+            class is class for css (eg turn all abc class to red bgcolor) -->
+            <label>
+                <input type="radio" value="cse" name="branch" id="comp" class="maja">CSE
+            </label>
+            <label>
+                <input type="radio" value="it" name="branch" id="infi tech">IT
+            </label>
+            <label>
+                <input type="radio" value="mech" name="branch" id="mechanical">mechanical
+            </label>
+            <label>
+                <input type="radio" value="civil" name="branch" id="civil">Civil
+            </label>
+            <br>
+
+
+            <!-- check box -->
+
+            <!-- id of input and for of label must match to enable click on text (otherwise only gives click on box) -->
+            <input type="checkbox" id="first" name="sem">
+            <label for="first"> For 1st sem</label>
+
+            <input type="checkbox" id="second" name="sem">
+            <label for="second"> For 2st sem</label>
+
+            <input type="checkbox" id="third" name="sem">
+            <label for="third"> For 3st sem</label>
+
+
+            <!-- textarea provides a text box  -->
+            <br>
+            <textarea name="reason" id="reason" cols="50" rows="10" placeholder="Eg. For fun, for printing"></textarea>
+
+            <br>
+
+            <!-- select this gives a dropdown
+            fisrt option is default -->
+
+
+            <select name="city" id="city">
+                <option value="seelctor">Select yout city</option>
+                <option value="gondal">Gondal</option>
+                <option value="london">London</option>
+                <option value="dubai">Dubai</option>
+                <option value="rajkot">Rajkot</option>
+            </select>
+        </form>
+
+        <!-- action in form is used to store the fetched info from form in that particular php file -->
+
+    </div>
+</body>
+
+</html>

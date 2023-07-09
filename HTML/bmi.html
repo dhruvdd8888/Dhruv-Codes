@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>BMI</title>
+</head>
+
+<body>
+    Height : <input type="text" placeholder="height" id="h"><br>
+    Weight : <input type="text" placeholder="weight" id="w"><br><br>
+    <button onclick="btn()">Calculate </button><br><br>
+    BMI : <input type="text" placeholder="BMI" id="b"><br>
+</body>
+<script>
+    function btn() {
+        ht=parseFloat(document.getElementById("h").value)
+        wt=parseFloat(document.getElementById("w").value)
+        bm=ht/(ht*ht)
+        document.getElementById("b").value = bm
+    }
+</script>
+</html>

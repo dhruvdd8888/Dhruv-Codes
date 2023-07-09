@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <input type="text"  id="a"><br>
+    <input type="text" id ="b"> <br>
+    <input type="text" id="c"><br>
+    <input type="text" id="d">
+</body>
+<script>
+    x=["car","bus","bike"]
+    y=[1,2,3,4]
+    w=["a","b","c"]
+    z=x.concat(y)
+    v=x.concat(w,y)
+    document.getElementById("a").value=x
+    document.getElementById("b").value=y
+    document.getElementById("c").value=z
+    document.getElementById("d").value=v
+</script>
+</html>

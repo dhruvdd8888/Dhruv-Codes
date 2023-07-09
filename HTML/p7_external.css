@@ -1,0 +1,29 @@
+h4{
+    font-family: Verdana;
+    background-color: aqua;
+}
+#textareaVal{
+    align-self: center;
+}
+label{
+    text-align: center;
+    width:30%;
+    height:20px;
+    border:5px;
+    border-radius: 5px;
+}
+input[type="submit"],input[type="button"]{
+width: 200px;
+height: 40px;
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+background-color: rgb(179, 175, 171);
+margin: 10px 200px;
+font-family: 'Nunito', sans-serif;
+border-radius: 10px;
+}
+
+input[type="submit"]:hover,input[type="button"]:hover{
+background-color: rgb(148, 145, 142);
+}

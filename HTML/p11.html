@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Array functions & Date Object</title>
+</head>
+<body>
+    <h1>Array Functions :</h1>
+    <p><b> pop :</b></p><p id=p1></p>
+    <p><b> push :</b></p><p id=p2></p>
+    <p><b> shift :</b></p><p id=p3></p>
+    <p><b> unshift :</b></p><p id=p4></p>
+    <p><b> length :</b></p><p id=p5></p>
+    <p><b> splice :</b></p><p id=p6></p>
+    <p><b> splice :</b></p><p id=p7></p>
+    <h1>Date Object:</h1>
+    <p id=p8></p>
+    <p id=p9></p>
+    <script>
+        const vehicles = ["car", "bus", "bike", "plane"];       
+        vehicles.pop();
+        document.getElementById("p1").innerHTML = vehicles;
+        vehicles.push("boat");
+        document.getElementById("p2").innerHTML = vehicles;
+        vehicles.shift();
+        document.getElementById("p3").innerHTML = vehicles;
+        vehicles.unshift("truck");
+        document.getElementById("p4").innerHTML = vehicles;
+        vehicles[vehicles.length] = "blimp";
+        document.getElementById("p5").innerHTML = vehicles;
+        vehicles.splice(2, 0, "chopper", "buggy");
+        document.getElementById("p6").innerHTML = vehicles;
+        vehicles.splice(0, 1);
+        document.getElementById("p7").innerHTML = vehicles;
+        var date=new Date()
+        document.getElementById("p8").innerHTML = "time:- "+date.getHours()+':'+date.getMinutes();
+        document.getElementById("p9").innerHTML = "Date:- "+date.getDate()+'-'+date.getMonth()+'-'+date.getFullYear();
+    </script>
+</body>
+</html> 

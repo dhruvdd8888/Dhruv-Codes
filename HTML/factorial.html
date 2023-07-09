@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title>Factorial</title>
+</head>
+
+<body>
+    Number : <input type="text" id="ip" placeholder="Input"><br>
+    <button onclick="fact()">Factorial</button><br>
+    Factorial : <input type="text" id="op" placeholder="0">
+</body>
+<script>
+    function fact() 
+    {
+        var xx = document.getElementById("ip").value
+        x=parseInt(xx)
+        var f=1
+        for(let i = 1; i <= x; i++) 
+            f=f*i            
+        document.getElementById("op").value=f
+        
+    }
+</script>
+</html>

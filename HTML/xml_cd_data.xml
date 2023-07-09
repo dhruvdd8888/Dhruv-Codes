@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl_cd_data.xsl"?> 
+<cdcatalogue>
+    <cd>
+        <title>EndGame</title>
+        <artist>Anthony And Joe Russo</artist>
+        <year>2018</year>
+        <genre>Sci Fi</genre>
+    </cd>
+    <cd>
+        <title>No Way Home</title>
+        <artist>Sam Raimi</artist>
+        <year>2022</year>
+        <genre>Sci Fi</genre>
+    </cd>
+    <cd>
+        <title>Love and Thunder</title>
+        <artist>Sam Raimi</artist>
+        <year>2022</year>
+        <genre>Sci Fi</genre>
+    </cd>
+    <cd>
+        <title>Eternals</title>
+        <artist>Chloe Zoe</artist>
+        <year>2021</year>
+        <genre>Time Period</genre>
+    </cd>
+</cdcatalogue>

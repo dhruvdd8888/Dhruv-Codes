@@ -1,0 +1,26 @@
+<html>
+<head>
+    <title>Day of the Week</title>
+</head>
+
+<body>
+    Enter a day:  <br>
+    <input type="text" placeholder="input" id="ipp"><br>
+    <button onclick="btn()">Check</button><br>
+    <input type="text" id="b"><br>
+</body>
+<script>
+    function btn() {
+        var d = new Date();
+        dy = parseInt(d.getDay())
+        var ip = document.getElementById("ipp").value
+        arr=["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
+        var p = (arr.indexOf(ip)+1)
+        var flag = "Miss"
+        if (dy==p) {
+            flag = "Hit"
+        }
+        document.getElementById("b").value = flag
+    }
+</script>
+</html>
